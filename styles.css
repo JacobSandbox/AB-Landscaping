@@ -12,7 +12,7 @@ footer {
     background-color: limegreen;
 }
 
-#menu a {
+.main #menu a {
     width: 50%;
     margin: 0% 25%;
     color: black;
@@ -24,13 +24,23 @@ footer {
 
 /*Class*/
 
+.return {
+    text-decoration: underline;
+    color: black;
+}
+
+.top {
+    text-align: right;
+    cursor: pointer;
+}
+
 .more {
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-.card {
+.main .card {
     width: 75%;
     margin: 150px 12.5%;
 }
@@ -71,14 +81,14 @@ footer {
     margin: 0;
 }
 
-#menu {
+.main #menu {
     display: flex;
     flex: 4;
     height: 100%;
     margin: 0;
 }
 
-#company {
+.main #company {
     position: absolute;
     margin: 0px;
     top: 20px;
@@ -86,7 +96,7 @@ footer {
     font-family: 'Dancing Script', cursive;
 }
 
-#logo {
+.main #logo {
     object-fit: cover;
     object-position: -100px 0px;
     width: 300px;
@@ -111,4 +121,56 @@ footer {
     body {
         background-color: green;
     }
+}
+
+/* Services page */
+
+.services #content {
+    display: flex;
+    flex-direction: column;
+}
+
+.services .card {
+    flex: 1;
+    width: 90%;
+    margin: 5%;
+}
+
+.services .card img {
+    width: 250px;
+    margin: 0 15px;
+}
+
+.services .card p {
+    font-size: 18pt;
+}
+
+.services #header {
+    flex: 1;
+    width: 100%;
+}
+
+.services #title {
+    float: left;
+    margin: 50px;
+    width: 63%;
+    font-size: 36pt;
+}
+
+.services #company {
+    position: absolute;
+    left: 100%;
+    transform: translate(-125%, 0);
+    width: 250px;
+    text-align: center;
+}
+
+.services #logo {
+    float: right;
+}
+
+.services .return {
+    position: absolute;
+    top: 25px;
+    left: 55px;
 }
