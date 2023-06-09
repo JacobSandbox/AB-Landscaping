@@ -11,11 +11,6 @@
 // Services page
 //////////////////////
 
-function test() {
-    const div = document.createElement("div");
-    document.getElementById("content").append(div);
-}
-
 function load() {
     generateCard("lawnmower", true, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
     generateCard("trimming", false, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
@@ -42,4 +37,18 @@ function generateCard ( img, dir, txt ) {
     const main = document.getElementById("content");
     // Append new div to content
     main.appendChild(card);
+}
+
+function openMenu() {
+    const drop = document.getElementById("drop-down");
+    if ( drop.dataset.isVisible != "true" ) {
+        drop.dataset.isVisible = "true";
+        drop.style = "display:flex";
+    }
+}
+
+function closeMenu() {
+    const drop = document.getElementById("drop-down");
+    drop.dataset.isVisible = "false";
+    drop.style = "display:none";
 }
